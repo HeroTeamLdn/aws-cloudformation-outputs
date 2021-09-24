@@ -1,0 +1,12 @@
+name: 'Amazon ECR "Login" Action for GitHub Actions'
+description: 'Returns outputs for a CloudFormation stack'
+inputs:
+  name:
+    description: 'Name of stack'
+    required: true
+outputs:
+  outputs:
+    description: 'Outputs from the tack'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
